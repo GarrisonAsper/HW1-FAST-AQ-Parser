@@ -36,8 +36,8 @@ def test_FastaParser():
     test_data = ('bad.fa')
     parsed_fasta = FastaParser(test_data)
 
-    with pytest.raises(ValueError, match=f"File ({bad_file_path}) had 0 lines."):
-        for record in parser:
+    with pytest.raises(ValueError, match=f"File ({self.filename}) had 0 lines."):
+        for record in parsed_fasta:
             pass
 
 
