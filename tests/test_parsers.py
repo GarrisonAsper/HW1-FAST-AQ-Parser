@@ -33,6 +33,8 @@ def test_FastaParser():
     files that are blank or corrupted in some way. Two example Fasta files are
     provided in /tests/bad.fa and /tests/empty.fa
     """
+    test_data = ('bad.fa')
+    parsed_fasta = FastaParser(test_data)
     pass
 
 

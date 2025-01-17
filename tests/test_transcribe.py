@@ -25,11 +25,18 @@ def test_transcribe():
     """
     Write your unit test for the transcribe function here.
     """
-    pass
+    test_sequence = 'ATGC'
+    correct_output = 'AUGC'
+    test_output = transcribe(test_sequence)
 
+    assert test_output = test_output
 
 def test_reverse_transcribe():
     """
     Write your unit test for the reverse transcribe function here.
     """
-    pass
+    test_sequence = 'ATGC'
+    correct_output = 'GCTU'
+    test_output = reverse_transcribe(test_sequence)
+
+    assert test_output = correct_output
