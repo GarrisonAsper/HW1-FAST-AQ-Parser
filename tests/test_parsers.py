@@ -47,20 +47,45 @@ def test_FastaFormat():
     Test to make sure that a fasta file is being read in if a fastq file is
     read, the first item is None
     """
-    pass
+    fastq = 'data/test.fq'
+    parsed_fasta = FastaParser(fastq)
 
+    fasta_record = []
+    for record in parsed_fasta:
+        fasta_record.append(record[0])
+    
+    assert fasta_record[0] == 'None'
 
+    
 def test_FastqParser():
     """
     Write your unit test for your FastqParser class here. You should generate
     an instance of your FastqParser class and assert that it properly reads 
     in the example Fastq File.
     """
-    pass
+
+    fastq = 'test/unit_test.fq'
+    parsed_fastq = FastqParser(fastq)
+
+    test_sequence = []
+    for record in parsed_fastq:
+        test_sequence.append(record[1])
+
+    assert test_sequence[0] = 'TGTGGTCGTATAGTTATTGTCATAAATTACACAGAATCGCGATTCTCCGCGTCCACCAATCTTAGTGCACCACAGCATCG'
+    
 
 def test_FastqFormat():
     """
     Test to make sure fastq file is being read in. If this is a fasta file, the
     first line is None
     """
-    pass
+
+    fasta = 'data/test.fa'
+    parsed_fastq = FastqParser(fasta)
+
+    fastq_record = []
+    for record in parsed_fastq:
+        fastq_record.append(record[0])
+    
+    assert fastq_record[0] == 'None'
+    
