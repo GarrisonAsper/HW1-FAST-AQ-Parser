@@ -36,7 +36,7 @@ def test_reverse_transcribe():
     Write your unit test for the reverse transcribe function here.
     """
     test_sequence = 'ATGC'
-    correct_output = 'GCTU'
+    correct_output = 'GCAU'
     test_output = reverse_transcribe(test_sequence)
 
     assert test_output == correct_output
