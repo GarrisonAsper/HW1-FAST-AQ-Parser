@@ -29,7 +29,7 @@ def test_transcribe():
     correct_output = 'AUGC'
     test_output = transcribe(test_sequence)
 
-    assert test_output = test_output
+    assert test_output == test_output
 
 def test_reverse_transcribe():
     """
@@ -39,4 +39,4 @@ def test_reverse_transcribe():
     correct_output = 'GCTU'
     test_output = reverse_transcribe(test_sequence)
 
-    assert test_output = correct_output
+    assert test_output == correct_output

@@ -10,7 +10,7 @@ def transcribe(seq: str, reverse: bool = False) -> str:
     Write a function that will transcribe (replace DNA sequence to RNA
     by replacing all 'T' to 'U') in an input sequence
     """
-
+    '''for Justin: To turn a perfectly reasonable sequence into RNA'''
     """
     Assumes that the sequence of to be transcribed into mRNA is the coding strand. Becaue transcription
     uses the reverse complement of the coding strand, the mRNA sequence is identical to DNA expect for U replacing T. 
