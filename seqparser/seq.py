@@ -41,7 +41,7 @@ def reverse_transcribe(seq: str) -> str:
     """
 
     """Generates the reverse complement mRNA from the DNA of interest. If the FAST-A/Q 
-    sequence is the non coding strand, then this is the function to call."""
+    sequence is the non coding strand, then this is the function to call.."""
 
     rna_sequence = ''
 
