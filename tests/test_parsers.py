@@ -71,7 +71,7 @@ def test_FastqParser():
     for record in parsed_fastq:
         test_sequence.append(record[1])
 
-    assert test_sequence[0] = 'TGTGGTCGTATAGTTATTGTCATAAATTACACAGAATCGCGATTCTCCGCGTCCACCAATCTTAGTGCACCACAGCATCG'
+    assert test_sequence[0] == 'TGTGGTCGTATAGTTATTGTCATAAATTACACAGAATCGCGATTCTCCGCGTCCACCAATCTTAGTGCACCACAGCATCG'
     
 
 def test_FastqFormat():
