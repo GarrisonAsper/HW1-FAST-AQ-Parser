@@ -64,7 +64,7 @@ def test_FastqParser():
     in the example Fastq File.
     """
 
-    fastq = 'test/unit_test.fq'
+    fastq = 'tests/unit_test.fq'
     parsed_fastq = FastqParser(fastq)
 
     for record in parsed_fastq:
