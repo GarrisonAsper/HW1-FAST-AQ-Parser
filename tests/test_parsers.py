@@ -54,7 +54,7 @@ def test_FastaFormat():
     for record in parsed_fasta:
         fasta_record.append(record[0])
     
-    assert fasta_record[0] == 'None'
+    assert fasta_record[0] == None
 
     
 def test_FastqParser():
@@ -67,11 +67,10 @@ def test_FastqParser():
     fastq = 'test/unit_test.fq'
     parsed_fastq = FastqParser(fastq)
 
-    test_sequence = []
     for record in parsed_fastq:
-        test_sequence.append(record[1])
+        test_sequence = record[1]
 
-    assert test_sequence[0] == 'TGTGGTCGTATAGTTATTGTCATAAATTACACAGAATCGCGATTCTCCGCGTCCACCAATCTTAGTGCACCACAGCATCG'
+    assert test_sequence == 'TGTGGTCGTATAGTTATTGTCATAAATTACACAGAATCGCGATTCTCCGCGTCCACCAATCTTAGTGCACCACAGCATCG'
     
 
 def test_FastqFormat():
@@ -87,5 +86,5 @@ def test_FastqFormat():
     for record in parsed_fastq:
         fastq_record.append(record[0])
     
-    assert fastq_record[0] == 'None'
+    assert fastq_record[0] == None
     
